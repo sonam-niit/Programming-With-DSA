@@ -1,0 +1,436 @@
+Computer Programming
+-----------------------------------------
+
+what is program? set of instruction which is used to execute some sprcific task.
+
+examples: adding 2 numbers, check whether the user is valid for vote not,
+	  check if the candidate is eligible for come exam or not,
+          print first 50 odd numbers.
+
+
+to complete these kind of task we have to write programs. 
+
+disadvantage to write it mannualy: it is time consuming.
+
+___________________________________________________________________________
+
+Websites
+-----------------
+
+1. static: where use can't do any interaction (wikipedia)
+2. dynamic: where user can do interactions (login, register, update profile, like, comments etc)
+	    examples: facebook.com, amazon.in
+
+Programming languages:
+
+A language which is used to write a program using that you can communicate with your computer system or with the application which is created.
+
+Examples: Python, JS, C#, C, C++, Java
+	   old programming languages: COBOL, Pascle, LIPS, RPG, Prolog
+
+_________________________________________________________________________________
+
+Programming languages means where you can not run the programms directly, first we have to convert it in machine understandable code and then only we can run it.
+
+That machine understandable code is called as byte code (native code) which you can execute.
+
+To convert your programs into native code you required a compiler which will compiler your program in to byte code.
+
+Each Programming language has its own compiler.
+
+________________________________________________________________________________
+
+Web Apppication is actually divided in 3 parts
+
+Frontend, backend, Database
+
+(some times backend and database may be at same location)
+
+------------------------------------------------------------------------
+
+
+FrontEnd: means view (presentation: how your application looks)
+	  what user can see
+	  (client side)
+	      we can create by : HTML, CSS , JS etc...
+
+BackEnd: which user can's see because its a logic written to process the user request.
+         you can write this using laguages
+		 like: java, C#, python
+
+Database: it's storage which is storing all your information
+		examples: oracle, MYSQL, MS SQL Server, MS Access etc.
+
+__________________________________________________________________________________________
+
+Basic of programming language.
+===========================================
+
+Variables: 
+
+whenever you try to work with some program you required to take input from user and process the input and generate the output.
+
+for that you required some temporary storage to store this input and output values.
+
+for that we can declare varibles it stores the value and your can process the same. This is called variable because everytime it value varies. you can change it.
+
+IDENTIFIER:
+---------------------
+
+TO INDENTIFY A  varible created, we required identifier.
+
+we can say name of a variable.
+
+name a variable then there are some common rules which you can follow
+--------------------------------------------------------------------------
+1. variable name can not start with numbers. (1num is not valid)
+2. it can be an alfanumeric. (num1 is valid)
+3. No special characters allowed (. , ? / space etc)
+4. Only _ and $ you can use while giving the variable name.
+5. it can not be more that 255 characters long.
+6. naming convestion: firstword should be in lower case, if it contains more words then the second word first letter should be in uppercase. (firstName, lastName, mobileNo)
+   (this is actually called lowerCamelCase)
+
+    or you can use underscore (first_name, last_name, mobile_no)
+7. should not give the name of variable with reserved keywords
+
+Keyword:
+------------------------------------------------------
+
+specific words which are basically used to write code in programming lagunage.
+
+ex: if, else, switch, include, int, float,boolean, double, char etc....
+
+Datatypes
+--------------------------------
+
+whenever you try to store your data, you memory must assign a memory size to that variable so it can store value inside the same. that you can define with the type of your data. means your data can be number, decimal number, textual, single character or either true or false.
+
+whole number (it can be negative zero or positive): int
+Decimal Number(negative or positive or zero but with floating points): float
+single character ( 'a', 'l') - char
+text - sequence of characters ("sonam") - Array of char
+single bit value (0 or 1) -- 0- false, 1-true
+
+_________________________________________________________________________________________________
+
+What is Syntax
+--------------------------
+
+a structure of your program
+
+
+suppose in c  program 
+
+#include<stdio.h>
+
+int main()
+{
+      prinf("Hello From simplilearn");
+}
+
+___________________________________________________________________________________________
+
+#include include library mentioned inside angle backet means if you wnat to use any libarary then take the permission from the same and start using its functions.
+
+stdio.h is the library which provides functions related to standard input and output.
+
+int main() {} -- called as main function (from where program starts its execution)
+
+int is the return type means when function executed it return some value.
+
+main is the method name where () says no parameter required to run this function.
+
+if you wnat to pass parameters then function looks like this main(int num1, int num2)
+
+{} called as a block of code where you shold write statements for your logic.
+
+prinf is the function available in stdio.h library which is used to display some values as an output.
+
+each statement must end with semicolon (;)
+________________________________________________________________________________________________________
+
+
+
+Simple Program with variable declaration
+
+#include<stdio.h>
+int main(){
+
+    int num1=10;
+    int num2=20;
+    int result= num1+num2;
+    printf("Number 1= %d \n",num1);
+    printf("Number 2= %d \n",num2);
+    printf("Result = %d \n" ,result);
+    printf("%d + %d = %d\n",num1,num2,result);
+}
+
+_______________________________________________________________________________________________
+
+\n is used to seprate line from two output.
+
+Operators
+-----------------------------------------------
+its a symbol which we can use to perform the operations on operands(on variables)
+
+Arithmetic operators
+
++ addition
+- subtraction
+* multiplication
+/ division
+
+#include<stdio.h>
+int main(){
+
+    int num1=10;
+    int num2=20;
+    int add= num1+num2;
+    int sub= num1-num2;
+    int mul= num1*num2;
+    int div= num1/num2;
+    printf("Number 1= %d \n",num1);
+    printf("Number 2= %d \n",num2);
+    printf("%d + %d = %d\n",num1,num2,add);
+    printf("%d - %d = %d\n",num1,num2,sub);
+    //display result of mul and div
+}
+______________________________________________________________
+
+Comments: they are non executable code in program (not run in the program)
+
+we will write this for developers understanding.
+
+2 types.
+
+1. single line:
+
+	//this is my comment
+
+2. multi line
+
+	/*
+		This is multiline comment
+		Developer Name: Sonam Soni
+		Date: 21st Aug 2022
+	*/
+
+_________________________________________________________________________________________
+
+
+
+Relational Operator
+----------------------------------
+
+compare values 
+
+<  --> less than
+>  --> greater than
+<= --> less than or equals
+>= --> greater than or equals
+== --> equals
+!= --> not equals
+
+_________________________________________________________________
+
+when you want to check some condition
+
+Conditional statements available for condition checking
+
+if, if else we can use for condiitoning
+
+_________________________________________________________________
+
+syntax
+--------------
+
+if(condition)
+{
+      //write your statement for condition correct
+}
+else
+{
+	//write the stament for incorrect condition
+}
+
+
+________________________________________________________________________________________
+
+Example
+---------------
+
+#include<stdio.h>
+/*
+		This is multiline comment
+		Developer Name: Sonam Soni
+		Date: 21st Aug 2022
+	*/
+int main(){
+
+    int num1=50;
+    int num2=20;
+
+    if(num1>num2)
+    {
+
+        printf("%d is larger",num1);
+    }
+    else
+    {
+
+        printf("%d is larger",num2);
+    }
+
+}
+
+
+
+
+Task:
+----------------------------
+1. write a program to simply display your name, address, phone, graduation details line by line.
+2. WAP to calculate area of square and rectangle.
+3. WAP to calculate area of circle. (pi * r * r)
+	(Hint: declare a variable float pi= 3.14) 
+4. WAP to calculate perimeter for square and rectangle.
+5. WAP to calculate Circumeference of Circle(2 * pi * r)
+6. WAP to calculate Simple Intrest. 
+	formula: PNR /100
+	P: princile amount (3000)
+	N: number of years (3)
+	R: rate of intrest (6.7)
+
+7. WAP to check the user is valid for Vote or not.
+	(hint age>=18)
+
+8. WAP to check weather the number is divisible by 3 or not.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
