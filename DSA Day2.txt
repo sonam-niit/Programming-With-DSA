@@ -1,0 +1,299 @@
+Logical Operator
+----------------------------------
+
+Used to combine conditions.
+
+if you want to test more than one condition then you can use logical opeartor.
+
+&& (AND)  --> if both conditions are true then only it is executed
+
+|| (OR) --> if any one of the condition is true then it is executed
+
+! (not) --> to make the condition from false to true and true to false.
+
+#include<stdio.h>
+int main(){
+
+    char c='z';
+
+    if(c=='a' || c== 'e' || c=='i' || c=='o' || c== 'u' ||
+       c=='A' || c== 'E' || c=='I' || c=='O' || c== 'U'){
+        printf("Character is Vovel");
+    }
+    else
+    {
+        printf("It is not a vovel");
+    }
+}
+
+_____________________________________________________________________________
+
+Combining multiple condition with && operator and test with else if
+-------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main(){
+
+    int per=62;
+
+    if(per>=70 && per<=100){
+        printf("Congratulations.. you got Distinction..!");
+    }
+    else if(per>=60 && per<=69){
+        printf("Congratulations.. You got First class");
+    }
+    else if(per>=50 && per<=59){
+        printf("Congratulations.. You got Second class");
+    }
+    else if(per>=35 && per<=49){
+        printf("Congratulations.. You got Pass class");
+    }
+    else if(per>=0 && per<=34){
+        printf("Sorry.. You are fail");
+    }
+    else{
+        printf("Kindly give proper percentage");
+    }
+}
+
+___________________________________________________________________________________________________
+
+Array
+
+group of similar type of data.
+
+array stores element in the index. Array Index always starts from 0.
+
+____________________________________________________________________________________________________
+
+#include<stdio.h>
+int main(){
+
+    int a[10]={11,23,45,56,7,34,90,56,87,27};
+
+    printf("First element of Array %d\n",a[0]);
+
+    printf("Last element of Array %d\n",a[9]);
+}
+
+__________________________________________________________________________________________________
+
+
+Strings demo
+
+#include<stdio.h>
+int main(){
+
+    char name[]= "sonam soni";
+    char phone[]="864382827";
+
+    printf("My Name %s\n",name);
+    printf("Phone Numbers is %s\n",phone);
+}
+
+____________________________________________________________________________________________
+
+
+
+
+
+Some Examples with C++
+--------------------------------------------------
+#include<iostream>
+
+using namespace std;
+
+int main(){
+
+    int number=20;
+    cout<<"Hello World\n";
+    cout<<"My Name is Sonam"<<endl;
+    cout<<"My Roll No is "<<number<<endl;
+
+    //endl means end line nad give output in another line
+    //either use \n or endl
+
+}
+_________________________________________________________________________________________________
+
+In condition what if you want to match an int or string or char and compare and according to that provide the output.
+
+This you can do with if and else if but what happen everytime it will check each condition, means to check the condition it takes time. So if you directly want to jump on some cases we can go for Switch.
+
+_____________________________________________________________________________________________________
+
+#include<iostream>
+
+using namespace std;
+
+int main(){
+
+    int num1,num2;
+    cout<<"Enter 2 numbers"<<endl;
+    cin>>num1>>num2;
+    char op;
+    cout<<"Enter any operator from + - * /"<<endl;
+    cin>>op;
+    switch(op){
+        case '+': cout<<"Addition: "<<(num1+num2)<<endl;
+                  break;
+        case '-': cout<<"Subtraction: "<<(num1-num2)<<endl;
+                break;
+        //write for case * and case /
+
+        default: cout<<"Kindly enter Proper Operator"<<endl;
+    }
+
+}
+___________________________________________________________________________________________
+
+Loops (Iteration) - repeat the same thing multiple times
+
+whenever you want to execute some similar kind of statements we can take help of loops.
+
+we have 3 types of loops.
+
+1. while loop
+--------------------------------------------
+
+syntax: while(condition)
+	{
+		//statements
+	}
+
+--------------------------------------------------
+
+#include<iostream>
+
+using namespace std;
+
+int main(){
+
+    int i=1;
+
+    while(i<=5){
+        cout<<"Value of i "<<i<<endl;
+        i++; // increase the value of i by 1
+    }
+
+    cout<<"Loop terminated"<<endl;
+
+}
+
+_____________________________________________________________________________
+
+while loop is entry controller loop means if the condition false then no statements are going to execute.
+
+______________________________________________________________________________________________
+
+Do while loop
+------------------------
+
+do{
+	//statements
+}
+while(condition);
+
+______________________________________________________________________________________________
+
+this loop is exit control loop, if the condition false then atleast once the loop will execute.
+_______________________________________________________________________________________________________
+
+#include<iostream>
+
+using namespace std;
+
+int main(){
+
+    int i=10;
+
+    do{
+        cout<<"Value of i "<<i<<endl;
+        i++;
+    }while(i<=5);
+
+    cout<<"Loop terminated"<<endl;
+
+}
+
+---------------------------------------------------------------------------------------------
+
+For loop
+-------------------------------------------------------------------
+
+for(intialization; condition; increment/decrement)
+{
+	//statements
+}
+
+
+
+#include<iostream>
+
+using namespace std;
+
+int main(){
+
+    int i;
+
+    for(i=1;i<=5;i++){
+        cout<<"I: "<<i<<endl;
+    }
+    cout<<"Loop terminated"<<endl;
+
+}
+_____________________________________________________________________________
+
+#include<iostream>
+
+using namespace std;
+
+int main(){
+
+    int i;
+    int sum=0;
+
+    for(i=1;i<=10;i++){
+        sum=sum+i;
+    }
+    cout<<"Sum is "<<sum<<endl;
+    cout<<"Loop terminated"<<endl;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
